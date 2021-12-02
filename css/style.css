@@ -11119,6 +11119,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "Chunk";
+  src: url("/fonts/chunkfive.regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -11142,7 +11148,7 @@ html, body {
   padding: 0 1rem;
 }
 
-.nav {
+.intro, .nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11278,6 +11284,31 @@ html, body {
   .nav {
     min-width: 50vw;
   }
+}
+.intro {
+  flex-direction: column;
+  max-width: 655px;
+  margin: 0 auto;
+}
+.intro__title {
+  font-size: 80px;
+  color: white;
+  font-weight: "Chunk";
+  text-transform: uppercase;
+  text-align: center;
+}
+.intro__descrip {
+  font-size: 18px;
+  color: #fafafa;
+  font-weight: 300px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+  text-align: center;
+}
+
+.title--greenish {
+  color: #01a2a6;
 }
 
 /*# sourceMappingURL=style.css.map */
