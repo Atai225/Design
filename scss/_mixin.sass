@@ -1,0 +1,94 @@
+
+=phone
+	@media screen and (max-width: $phone)
+		@content
+
+=tablet
+	@media screen and (max-width: $tablet)
+		@content
+
+=laptop
+	@media screen and (max-width: $laptop)
+		@content
+
+=desktop
+	@media screen and (max-width: $desktop)
+		@content
+
+=media($size)
+	@media screen and (max-width: $size)
+		@content
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&::-ms-input-placeholder
+		@content
+
+=list_reset
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+=img-fit($width: null)
+	object-fit: cover
+	max-width: $width
+	height: auto
+ 
+=grid($columns: null,$gap: null,$rows: null, $auto: null)
+	display: grid
+	grid-template-columns: $columns
+	gap: $gap
+	grid-template-rows: $rows
+	grid-auto-rows: $auto
+
+=text($size: null, $color: null, $width: null, $decor :null, $font: null, $transform: null,$align:null)
+	font-size: $size
+	color: $color
+	font-weight: $width
+	text-decoration: $decor
+	font-family: $font
+	text-transform: $transform
+	text-align: $align
+
+=btn($bgcolor: null,$gutter: null,$radius: null,$border: null)
+	background-color: $bgcolor
+	padding: $gutter
+	border-radius: $radius
+	border: $border
+
+
+=hamburger
+	.nav
+		position: absolute
+		top: 0
+		left: 0
+		width: 40%
+		height: 100%
+		background-color:#F2F4F9
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		
+
+		transform: translateX(-100%)
+		transition: .4s
+	
+	.nav__link
+		margin: 0
+		// @include text(28px,white)
+		margin-bottom: 1.2rem
+	.hamburger
+		display: inline-block
+		z-index: 1
+	.is-active
+		transform: translateX(0)
+	
+%list--reset
+	margin: 0
+	padding: 0
+	list-style: none
