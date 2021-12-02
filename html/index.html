@@ -7,17 +7,25 @@
     <title>App landing</title>
     <link rel="stylesheet" href="../node_modules/hamburgers/dist/hamburgers.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="header"> 
-        <div class="navbar">
-          <div class="brand"> 
-            <div class="logo">Yok<span class="logo--bold">Ngalam</span></div>
+        <div class="container">
+          <div class="navbar">
+            <div class="brand"> <a class="logo" href="#">Yok<span class="logo--bold">Ngalam</span></a></div>
+            <nav class="nav"> <a class="nav__link nav__link--bordered" href="#">Home </a><a class="nav__link" href="#">Destination </a><a class="nav__link" href="#">Ittinary </a><a class="nav__link" href="#">Review</a><a class="nav__link" href="#">Contact </a>
+              <div class="dropdown">
+                <div class="btn dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="author__img" src="../img/user.img" alt=""></div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">About me</a></li>
+                  <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                </ul>
+              </div>
+            </nav>
+            <button class="hamburger hamburger--emphatic" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           </div>
-          <nav class="nav"> <a class="nav__link" href="#">Home </a><a class="nav__link" href="#">Destination </a><a class="nav__link" href="#">Ittinary </a><a class="nav__link" href="#">Review</a><a class="nav__link" href="#">Contact </a></nav>
-          <div class="author"> <img class="author__img" src="../img/user.img" alt=""></div>
         </div>
       </header>
     </div>

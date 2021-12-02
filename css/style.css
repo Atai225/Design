@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11141,18 +11142,142 @@ html, body {
   padding: 0 1rem;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  min-height: 100vh;
+  background: url(../img/background.jpg) no-repeat 0 0/cover;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
 }
 
+.logo {
+  font-size: 25px;
+  color: white;
+  font-weight: 400px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.logo--bold {
+  font-weight: bold;
+}
+
+.nav {
+  margin-left: auto;
+}
+
 .nav__link {
   font-size: 14px;
-  letter-spacing: 1px;
-  color: #ffffff;
-  font-weight: 800;
-  font-family: "Lato";
-  text-align: center;
+  color: white;
+  font-weight: 800px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  margin-right: 3.75rem;
+}
+@media screen and (max-width: 950px) {
+  .nav__link {
+    margin-right: 2rem;
+  }
+}
+
+.nav__link--bordered {
+  border-radius: 1.3125rem;
+  border: 3px solid white;
+  padding: 7px 15px;
+}
+
+.nav__link--bordered:hover {
+  border: 3px solid #0d6efd;
+  padding: 8px 16px;
+}
+
+.nav__link--bordered:active {
+  padding: 6px 14px;
+  border: 4px solid rgba(255, 255, 255, 0.555);
+  color: rgba(255, 255, 255, 0.555);
+  font-size: 14px;
+}
+
+.author__img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5625rem;
+}
+
+.dropdown-menu {
+  background: #9BDDD7;
+  border: none;
+}
+
+.dropdown-item {
+  color: white;
+  background: #9BDDD7;
+  font-size: 14px;
+  color: white;
+  font-weight: 800px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+.dropdown-item:active {
+  color: #0d6efd;
+  background: white;
+}
+
+.dropdown-toggle, .dropdown-toggle:active, .dropdown-toggle:hover {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    height: 100vh;
+    background-color: #9BDDD7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.4s;
+  }
+
+  .nav__link {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .hamburger {
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .is-active {
+    transform: scale(1);
+  }
+
+  .nav {
+    min-width: 30vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    min-width: 50vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

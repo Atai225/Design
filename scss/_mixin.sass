@@ -65,28 +65,27 @@
 	.nav
 		position: absolute
 		top: 0
-		left: 0
-		width: 40%
-		height: 100%
-		background-color:#F2F4F9
+		right: -1rem
+		height: 100vh
+		background-color:#9BDDD7
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
 		
 
-		transform: translateX(-100%)
+		transform: scale(0)
 		transition: .4s
 	
 	.nav__link
 		margin: 0
-		// @include text(28px,white)
+		@include text($align: center)
 		margin-bottom: 1.2rem
 	.hamburger
 		display: inline-block
 		z-index: 1
 	.is-active
-		transform: translateX(0)
+		transform: scale(1)
 	
 %list--reset
 	margin: 0

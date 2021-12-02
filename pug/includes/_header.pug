@@ -1,13 +1,23 @@
 header.header 
-	.navbar
-		.brand 
-			div.logo Yok
-				span.logo--bold Ngalam
-		nav.nav 
-			a.nav__link(href="#") Home 
-			a.nav__link(href="#") Destination 
-			a.nav__link(href="#") Ittinary 
-			a.nav__link(href="#") Review
-			a.nav__link(href="#") Contact 
-		.author 
-			img.author__img(src="../img/user.img", alt="")
+	.container
+		.navbar
+			.brand 
+				a.logo(href="#") Yok
+					span.logo--bold Ngalam
+			nav.nav 
+				a.nav__link.nav__link--bordered(href="#") Home 
+				a.nav__link(href="#") Destination 
+				a.nav__link(href="#") Ittinary 
+				a.nav__link(href="#") Review
+				a.nav__link(href="#") Contact 
+				.dropdown
+					#dropdownMenuLink.btn.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+						img.author__img(src="../img/user.img", alt="")
+					ul.dropdown-menu(aria-labelledby='dropdownMenuLink')
+						li
+							a.dropdown-item(href='#') About me
+						li
+							a.dropdown-item(href='#') Portfolio
+			button.hamburger.hamburger--emphatic(type='button')
+				span.hamburger-box
+					span.hamburger-inner
