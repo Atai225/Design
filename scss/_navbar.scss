@@ -44,6 +44,9 @@
 		border-radius: 1.5625rem;
 	}
 }
+.img{
+	@include img-fit(100%);
+}
 // dropdown
 .dropdown-menu{
 	background: #9BDDD7;

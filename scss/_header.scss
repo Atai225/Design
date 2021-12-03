@@ -1,15 +1,57 @@
 .intro{
 	@extend %flex_center;
 	flex-direction: column;
-	max-width: 655px;
+	max-width: 40.9375rem;
 	margin: 0 auto;
+	margin-top: 15%;
+	// margin-top: auto;
+	// margin-bottom: auto;
 	&__title{
-		@include text(80px,rgb(255, 255, 255),$fontchunk,$transform: uppercase,$align: center);}
+		@include text(4.3125rem,rgb(255, 255, 255),100,none,$fontbevan,$transform: uppercase,$align: center);}
 	&__descrip{
-		@include text(18px,#fafafa,300px,none,$fontlato,none,center)
+		@include text(1.125rem,#fafafa,300px,none,$fontlato,none,center);
+		line-height: 2.1875rem;
 	}
-	
+	&__btn{
+		@include btn(#ffffa6,1.5625rem 2.1875rem,37px,none);
+		display: inline-block;
+		margin-top: 1rem;
+	}
 }
 .title--greenish{
 	color: #01a2a6;
+}
+.btn__link{
+	padding: 0;
+	@include text(16px,#10273d,bolder,none,$fontlato,uppercase);
+}
+@include tablet{
+	.intro{
+		max-width: 31.25rem;
+		margin-top: 22%;
+		&__title{
+			font-size: 3.5625rem;
+		}
+		&__descrip{
+			line-height: 1.75rem;
+		}
+		&__btn{
+			padding: 1.25rem 1.875rem;
+		}
+	}
+}
+@include media(600px){
+	.intro{
+		max-width: 420px;
+		margin-top: 27%;
+		&__title{
+			font-size: 47px;
+		}
+		&__descrip{
+			line-height: 22px;
+		}
+		&__btn{
+			padding: 17px 25px;
+		}
+	}
 }

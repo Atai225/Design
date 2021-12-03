@@ -1,0 +1,20 @@
+.city{
+	@extend %flex_center;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.514);
+	&__info{
+		max-width: 35.3125rem;
+	}
+	padding: 100px 0;
+}
+.section{
+	&__title{
+		@include text(60px,#29d9c2,100,none,$fontbio);
+		line-height: 2.1875rem;
+		margin-bottom: 3.4375rem;
+	}
+	&__text{
+		@include text(16px,#777,400,none,$fontlato);
+		line-height: 35px;
+	}
+}

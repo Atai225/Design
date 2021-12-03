@@ -6,6 +6,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11119,12 +11121,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@font-face {
-  font-family: "Chunk";
-  src: url("/fonts/chunkfive.regular.ttf");
-  font-style: normal;
-  font-weight: normal;
-}
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -11148,7 +11144,7 @@ html, body {
   padding: 0 1rem;
 }
 
-.intro, .nav {
+.city, .intro, .nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11216,6 +11212,12 @@ html, body {
   max-width: 100%;
   height: auto;
   border-radius: 1.5625rem;
+}
+
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .dropdown-menu {
@@ -11287,28 +11289,107 @@ html, body {
 }
 .intro {
   flex-direction: column;
-  max-width: 655px;
+  max-width: 40.9375rem;
   margin: 0 auto;
+  margin-top: 15%;
 }
 .intro__title {
-  font-size: 80px;
+  font-size: 4.3125rem;
   color: white;
-  font-weight: "Chunk";
+  font-weight: 100;
+  text-decoration: none;
+  font-family: "Bevan", cursive;
   text-transform: uppercase;
   text-align: center;
 }
 .intro__descrip {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fafafa;
   font-weight: 300px;
   text-decoration: none;
   font-family: "Lato", sans-serif;
   text-transform: none;
   text-align: center;
+  line-height: 2.1875rem;
+}
+.intro__btn {
+  background-color: #ffffa6;
+  padding: 1.5625rem 2.1875rem;
+  border-radius: 37px;
+  border: none;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .title--greenish {
   color: #01a2a6;
+}
+
+.btn__link {
+  padding: 0;
+  font-size: 16px;
+  color: #10273d;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: 31.25rem;
+    margin-top: 22%;
+  }
+  .intro__title {
+    font-size: 3.5625rem;
+  }
+  .intro__descrip {
+    line-height: 1.75rem;
+  }
+  .intro__btn {
+    padding: 1.25rem 1.875rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro {
+    max-width: 420px;
+    margin-top: 27%;
+  }
+  .intro__title {
+    font-size: 47px;
+  }
+  .intro__descrip {
+    line-height: 22px;
+  }
+  .intro__btn {
+    padding: 17px 25px;
+  }
+}
+.city {
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.514);
+  padding: 100px 0;
+}
+.city__info {
+  max-width: 35.3125rem;
+}
+
+.section__title {
+  font-size: 60px;
+  color: #29d9c2;
+  font-weight: 100;
+  text-decoration: none;
+  font-family: "BioRhyme", serif;
+  line-height: 2.1875rem;
+  margin-bottom: 3.4375rem;
+}
+.section__text {
+  font-size: 16px;
+  color: #777;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  line-height: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
