@@ -11366,12 +11366,15 @@ html, body {
   }
 }
 .city {
-  justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.514);
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 .city__info {
   max-width: 35.3125rem;
+  margin-left: auto;
+}
+.city__img {
+  margin-right: 2rem;
 }
 
 .section__title {
@@ -11380,8 +11383,13 @@ html, body {
   font-weight: 100;
   text-decoration: none;
   font-family: "BioRhyme", serif;
-  line-height: 2.1875rem;
-  margin-bottom: 3.4375rem;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 42px;
+    line-height: 40px;
+  }
 }
 .section__text {
   font-size: 16px;
@@ -11389,7 +11397,25 @@ html, body {
   font-weight: 400;
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  line-height: 35px;
+  line-height: 2.1875rem;
+}
+
+@media screen and (max-width: 925px) {
+  .city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 1rem;
+  }
+  .city__info {
+    margin: 0;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .city__img {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

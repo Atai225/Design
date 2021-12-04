@@ -1,20 +1,43 @@
 .city{
 	@extend %flex_center;
-	justify-content: space-between;
 	background-color: rgba(255, 255, 255, 0.514);
 	&__info{
 		max-width: 35.3125rem;
+		margin-left: auto;
 	}
-	padding: 100px 0;
+	&__img{
+		margin-right: 2rem;
+	}
+	padding: 6.25rem 0;
 }
 .section{
 	&__title{
 		@include text(60px,#29d9c2,100,none,$fontbio);
-		line-height: 2.1875rem;
-		margin-bottom: 3.4375rem;
+		margin-bottom: 30px;
+		@include phone{
+			font-size: 42px;
+			line-height: 40px;
+		}
 	}
 	&__text{
 		@include text(16px,#777,400,none,$fontlato);
-		line-height: 35px;
+		line-height: 2.1875rem;
+	}
+}
+@include media(925px){
+	.city{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 5rem 1rem;
+		&__info{
+			margin: 0;
+			text-align: center;
+			margin-top: 3rem;
+		}
+		&__img{
+			margin: 0;
+		}
 	}
 }
