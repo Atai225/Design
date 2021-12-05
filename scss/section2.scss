@@ -1,0 +1,61 @@
+.dest{
+	padding: 5rem 0;
+	&__text{
+		max-width: 41.875rem;
+	}
+}
+.dest__info--top{
+	display: flex;
+	flex-direction: column;
+}
+.more-info::before{
+	content: "🛈";
+}
+.more-info{
+	@include text(16px,#aeaeae,500,none,$fontlato);
+	cursor: pointer;
+	display: flex;
+	align-self: end;
+}
+.more-info:hover{
+	color: rgb(78, 78, 78);
+}
+.form{
+	position: relative;
+	width: 230px;
+}
+.search__btn{
+	position: absolute;
+}
+.search__btn::before{
+	content: "🔍";
+	// content: url(https://cdn-icons.flaticon.com/png/128/2811/premium/2811790.png?token=exp=1638721626~hmac=59faa5b9d1a55db5db2c71ce2d33a6db);
+}
+::placeholder{
+	font-style: italic;
+	padding-left: 2rem;
+}
+.dest__info--bottom{
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
+}
+.recomend{
+	@include text(16px,black,900,none,$fontlato,$transform: uppercase);
+	cursor: pointer;
+	display: flex;
+	align-self: end;
+}
+.title--gray{
+	color: #777;
+}
+@include media(575px){
+	.recomend{
+		margin-top: 1rem;
+		align-self: start;
+	}
+	.more-info{
+		margin-bottom: 1rem;
+		align-self: start;
+	}
+}

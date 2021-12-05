@@ -11365,6 +11365,14 @@ html, body {
     padding: 17px 25px;
   }
 }
+.main {
+  background-color: #f2fefe;
+}
+
+.block--white {
+  background-color: white;
+}
+
 .city {
   background-color: rgba(255, 255, 255, 0.514);
   padding: 6.25rem 0;
@@ -11415,6 +11423,88 @@ html, body {
   }
   .city__img {
     margin: 0;
+  }
+}
+.dest {
+  padding: 5rem 0;
+}
+.dest__text {
+  max-width: 41.875rem;
+}
+
+.dest__info--top {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-info::before {
+  content: "🛈";
+}
+
+.more-info {
+  font-size: 16px;
+  color: #aeaeae;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-self: end;
+}
+
+.more-info:hover {
+  color: #4e4e4e;
+}
+
+.form {
+  position: relative;
+  width: 230px;
+}
+
+.search__btn {
+  position: absolute;
+}
+
+.search__btn::before {
+  content: "🔍";
+}
+
+::placeholder {
+  font-style: italic;
+  padding-left: 2rem;
+}
+
+.dest__info--bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.recomend {
+  font-size: 16px;
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-self: end;
+}
+
+.title--gray {
+  color: #777;
+}
+
+@media screen and (max-width: 575px) {
+  .recomend {
+    margin-top: 1rem;
+    align-self: start;
+  }
+
+  .more-info {
+    margin-bottom: 1rem;
+    align-self: start;
   }
 }
 
