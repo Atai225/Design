@@ -11434,7 +11434,7 @@ html, body {
 
 .dest__info--top {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .more-info::before {
@@ -11448,8 +11448,6 @@ html, body {
   text-decoration: none;
   font-family: "Lato", sans-serif;
   cursor: pointer;
-  display: flex;
-  align-self: end;
 }
 
 .more-info:hover {
@@ -11476,7 +11474,7 @@ html, body {
 
 .dest__info--bottom {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   margin-top: 4rem;
 }
 
@@ -11488,8 +11486,6 @@ html, body {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  display: flex;
-  align-self: end;
 }
 
 .title--gray {
@@ -11497,15 +11493,32 @@ html, body {
 }
 
 @media screen and (max-width: 575px) {
+  .dest__info--bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
   .recomend {
     margin-top: 1rem;
-    align-self: start;
+  }
+
+  .dest__info--top {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .more-info {
     margin-bottom: 1rem;
-    align-self: start;
   }
+}
+.text--center {
+  text-align: center;
+}
+
+.set__info {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
