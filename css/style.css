@@ -11896,14 +11896,14 @@ html, body {
   }
 }
 
-.footer__info {
+.footer__linkus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   padding: 0 0 6rem 0;
 }
 @media screen and (max-width: 768px) {
-  .footer__info {
+  .footer__linkus {
     grid-template-columns: 1fr;
   }
 }
@@ -12050,13 +12050,48 @@ html, body {
   margin-left: -15px;
 }
 
-.sub__btn::before {
-  content: ">";
+.s0 {
+  fill: white;
 }
 
-.socialmed {
+.footer__info {
   min-height: 30vh;
   background: url(../img/mountains-dark-bg.jpg) no-repeat 0 0/cover;
+}
+.footer__info--top {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.allow__info {
+  font-size: 12px;
+  color: #5d5c5c;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+.social {
+  margin-left: auto;
+}
+
+.social__link {
+  text-decoration: none;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+.author__link, .rights {
+  font-size: 14px;
+  color: #5d5c5c;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  margin-left: 0.375rem;
 }
 
 /*# sourceMappingURL=style.css.map */

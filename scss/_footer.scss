@@ -12,7 +12,7 @@
 	}
 }
 
-.footer__info{
+.footer__linkus{
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 	gap: 5rem;
@@ -126,12 +126,33 @@
 	border-radius:0 5px 5px 0 ;
 	margin-left: -15px;
 }
-
-.sub__btn::before{
-	content: ">";
+.s0{
+	fill: white;
 }
 
-.socialmed{
+.footer__info{
 	min-height: 30vh;
 	background: url(../img/mountains-dark-bg.jpg) no-repeat 0 0 / cover;
+	&--top{
+		display: flex;
+		padding-top: 1rem;
+	}
+}
+.allow__info{
+	@include text(12px,#5d5c5c,400,none,$fontlato);
+}
+.social{
+	margin-left: auto;
+}
+.social__link{
+	text-decoration: none;
+}
+.author{
+	display: flex;
+	justify-content: center;
+	margin-top: 25%;
+}
+.author__link,.rights{
+	@include text(14px,#5d5c5c,400,none,$fontlato);
+	margin-left: 0.375rem;
 }

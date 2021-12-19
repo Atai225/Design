@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 30" width="31" height="30">
+	<title>footer</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #3d3741 } 
+	</style>
+	<g id="footer">
+		<path id="Forma 1" class="s0" d="m30.16 14.89c0 8.15-6.6 14.75-14.75 14.75c-8.15 0-14.75-6.6-14.75-14.75c0-8.15 6.6-14.75 14.75-14.75c8.15 0 14.75 6.6 14.75 14.75zm-10.94 0l-2.42 0l0 8.85h-3.32v-8.85h-2.21v-3.05l2.21 0l0-1.8c0-2.49 0.67-4 3.6-4h2.44v3.05h-1.53c-1.14 0-1.2 0.43-1.2 1.22l0 1.53h2.74l-0.32 3.05z" />
+	</g>
+</svg>
