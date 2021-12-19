@@ -1,3 +1,6 @@
+.recomendations{
+	margin-top: 3rem;
+}
 .dest{
 	padding: 5rem 0;
 	&__text{
@@ -8,9 +11,6 @@
 	display: flex;
 	justify-content: space-between;
 }
-.more-info::before{
-	content: "🛈";
-}
 .more-info{
 	@include text(16px,#aeaeae,500,none,$fontlato);
 	cursor: pointer;
@@ -18,20 +18,21 @@
 .more-info:hover{
 	color: rgb(78, 78, 78);
 }
-.form{
-	position: relative;
-	width: 230px;
-}
-.search__btn{
-	position: absolute;
-}
-.search__btn::before{
-	content: "🔍";
-	// content: url(https://cdn-icons.flaticon.com/png/128/2811/premium/2811790.png?token=exp=1638721626~hmac=59faa5b9d1a55db5db2c71ce2d33a6db);
-}
 ::placeholder{
 	font-style: italic;
-	padding-left: 2rem;
+}
+
+.search__btn{
+	border: 1px solid #c9c9c9;
+	background:transparent;
+	border-radius: 30px 0 0 30px ;
+	border-right: none ;
+
+}
+.search__input{
+	border-radius: 0 30px 30px 0;
+	background: transparent;
+	border-left:none ;
 }
 .dest__info--bottom{
 	display: flex;
@@ -60,5 +61,95 @@
 	}
 	.more-info{
 		margin-bottom: 1rem;
+	}
+}
+.rec__img{
+	@include img-fit(100%);
+	width: 100%;
+	height: 100%;
+}
+.recom-1{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns:2fr 1fr;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.rec__info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.rec__tilte{
+	@include text(30px,$font: $fontlato);
+}
+.rec__descrip{
+	@include text(16px,#777,700,none,$fontlato);
+	line-height: 35px;
+}
+.rec__info--img{
+	@include img-fit(25%);
+	margin-bottom: 1rem;
+}
+.recom-2{
+	display: grid;
+	grid-template-columns:2fr 1fr;
+	gap: 1rem;
+	
+}
+.rec__wrap {
+	padding-right: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.rec-3__img {
+	margin-left: -1rem;
+	position: relative;
+}
+.logo--island{
+	position: absolute;
+	top: 35%;
+	left:35%;
+	z-index: 2;
+	object-fit: cover;
+	max-width: 35%;
+}
+@include tablet{
+	.recom-1{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.rec__wrap{
+		padding: 0;
+	}
+	.recom-2{
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-top: 3rem;
+	}
+	.rec-3__img{
+		margin: 0;
+	}
+	.rec__info{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.logo--island{
+		position: absolute;
+		top: 30%;
+		left:34%;
+	}
+}
+@include phone{
+	.rec__wrap{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.logo--island{
+		position: absolute;
+		top: 30%;
 	}
 }

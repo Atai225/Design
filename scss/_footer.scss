@@ -1,0 +1,137 @@
+.section--map{
+	min-height: 60vh;
+	background: url(../img/map.jpg) no-repeat 0 0 / cover;
+}
+.footer__title{
+	@include text(67px,#fff,100,none,$fontbevan);
+	text-align: center;
+	padding: 5rem;
+	@include phone{
+		padding: 2rem 0;
+		font-size: 57px;
+	}
+}
+
+.footer__info{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 5rem;
+	padding: 0 0 6rem 0;
+	@include tablet{
+		grid-template-columns: 1fr;
+	}
+}
+.input{
+	padding: 20px 0 20px 26px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.input-1{
+	width: 100%;
+}
+.input-2,.input-3{
+	width: 49%;
+}
+@include tablet{
+	.input-3{
+		width: 100%;
+	}
+	.input-2{
+		width: 100%;
+	}
+}
+.input::placeholder{
+	padding: 0;
+}
+#comment{
+	width: 100%;
+	min-height: 95px;
+}
+.form__btn{
+	display: flex;
+	margin-left: auto;
+	background-color: #c3f37f;
+	padding:20px ;
+	border-radius: 30px;
+	border: none;
+	margin-top: 1.5625rem;
+}
+
+
+.contact__title{
+	@include text(44px,#fff,lighter,none,$fontlato);
+	margin-bottom: 3.75rem;
+}
+.contact__info{
+	display: flex;
+	flex-direction: column;
+	@include tablet{
+		text-align: center;
+	}
+}
+.place__info{
+	@include text(12px,#fff,100,none,$fontlato);
+	margin: 0;
+}
+.link{
+	@include text(12px,#fff,100,none,$fontlato);
+	&--yellow{
+		font-style: italic;
+		color: #fff772;
+		margin-bottom: 0.5rem;
+	}
+}
+
+
+
+
+.subscribe{
+	min-height: 20vh;
+	background: linear-gradient(140deg,#bdf271 50%,#b0e467 50%);
+}
+.sub__content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0 1.5rem 0;
+	@include tablet{
+		display: block;
+		flex-direction: column;
+
+	}
+}
+.sub__title{
+	@include text(50px,#fff,100,none,$fontbevan);
+}
+.sub__text{
+	@include text(16px,#fff,300,none,$fontlato);
+}
+.sub{
+	display: flex;
+}
+.sub__input{
+	width: 300px;
+	border: none;
+	border-radius: 5px;
+	@include tablet{
+		width: 100%;
+	}
+}
+.sub__btn{
+	border: none;
+	background: #01a2a6;
+	padding: 20px 30px;
+	color: white;
+	border-radius:0 5px 5px 0 ;
+	margin-left: -15px;
+}
+
+.sub__btn::before{
+	content: ">";
+}
+
+.socialmed{
+	min-height: 30vh;
+	background: url(../img/mountains-dark-bg.jpg) no-repeat 0 0 / cover;
+}

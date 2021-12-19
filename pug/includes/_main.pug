@@ -1,5 +1,5 @@
 main.main 
-	.block--white
+	section.block--white
 		.container 
 			div.section.city
 				img.city__img.img(src="../img/city.png" alt="")
@@ -14,17 +14,167 @@ main.main
 				.dest__info--top
 					h2.section__title Des
 						span.title--greenish tination
-					a.more-info  see basic regulation
+					a.more-info(href="#") 
+						svg.info(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+							path(d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z')               
+						| see basic regulation
 				p.section__text.dest__text Being around by many mountain, Malang not only came with mountain vacation, but our beach,cultural spot, and Human Interest is worth to experienced.
 				.dest__info--bottom
 					form.d-flex.search
-						input.form.form-control.me-2.rounded-pill(type='search' placeholder='search destination' aria-label='Search')
 						button.btn.search__btn(type='submit')
-						//- i.bi.bi-search
-					p.recomend All place  / 
+							svg.search-icon(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z')
+						input.search__input.form-control.me-2(type='search' placeholder='search destination' aria-label='Search')
+						
+					.recomend All place  / 
 						span.title--gray Recomended place
-		section.set
-			.set__info 
-				h2.section__title.text--center Set 
-					span.title--greenish Ittinery
-				p.section__text.text--center Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation. Have a great trip !
+		
+
+
+
+			.recomendations 
+				.recom-1
+					.rec-1__img
+						img.rec__img(src="../img/parachute.jpg", alt="")
+					.rec__info
+						img.rec__info--img(src="../img/carousel.png", alt="")
+						h3.rec__title.title--greenish Batu 
+						p.rec__descrip  is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.
+				.recom-2
+					.rec__wrap
+						.rec__info
+							img.rec__info--img(src="../img/mountain-logo.png", alt="")
+							h3.rec__title.title--greenish Bromo
+							p.rec__descrip Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known
+						.rec-2__img 
+							img.rec__img(src="../img/montains.jpg", alt="")
+					.rec-3__img 
+						img.rec__img.img--island(src="../img/ship.jpg", alt="")
+						img.logo--island(src="../img/logo-island.svg", alt="")
+
+
+		.container.set__container
+			section.set
+				.set__info 
+					h2.section__title.text--center Set 
+						span.title--greenish Ittinery
+					p.section__text.text--center Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation. Have a great trip !
+				
+				.set__blocks 
+					.set__plan
+						.set__plan--top
+							h5.set__title Your ittinery title here
+						.set__plan--mid 
+							.set__date--info
+								.set__day Day 1
+								select#set__date(name="date")
+									option(value="05/29/2015") 05/29/2015
+									option(value="05/29/2015") 05/30/2015
+									option(value="05/29/2015") 05/31/2015
+									option(value="05/29/2015") 06/01/2015
+									option(value="05/29/2015") 06/02/2015
+									option(value="05/29/2015") 06/03/2015
+							.set__place--info
+								img.set__img(src="../img/mount.png", alt="")
+								.set__place Mt.Bromo
+								.set__time 03.30 - 9.00
+							.set__add add sub destination 
+								span.plus +
+							.set__place--info
+								img.set__img(src="../img/carous.png", alt="")
+								.set__place Batu City
+								.set__time 10.00 - 15.00
+							.set__place--options 
+								.set__option.set__option--first Enjoy Malang while Listening Music
+								.set__option Gonna Eat BAKSO
+							.set__add add sub destination 
+								span.plus +
+							.set__date--info
+								.set__day Day 2
+								select#set__date(name="date")
+									option(value="05/29/2015") 05/29/2015
+									option(value="05/29/2015") 05/30/2015
+									option(value="05/29/2015") 05/31/2015
+									option(value="05/29/2015") 06/01/2015
+									option(value="05/29/2015") 06/02/2015
+									option(value="05/29/2015") 06/03/2015
+							.set__dest--info Drag Destination Here
+					.set__dest
+						.dest__top 
+							h5.set__title.dest__title List of Destination
+						.dest__places--sort
+							select#dest__sort(name="place") 
+								option(value="Mountain") Mountain
+								option(value="Lake") Lake
+								option(value="Forest") Forest
+							
+							svg.search-icon(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z') 
+						.dest__info 
+							.dest__place--item 	
+								.dest__place--info
+									.set__place Mt.Bromo
+									.dest__time estimated time: 
+										span.title--greenish 5 Hours
+									
+								.dest__place--more 
+									img.set__img(src="../img/mount.png", alt="")
+									a.dest--more(href="#") view details 
+						.dest__info 
+							.dest__place--item 	
+								.dest__place--info
+									.set__place Mt.Bromo
+									.dest__time estimated time: 
+										span.title--greenish 5 Hours
+									
+								.dest__place--more 
+									img.set__img(src="../img/mount.png", alt="")
+									a.dest--more(href="#") view details 
+
+						.dest__info 
+							.dest__place--item 	
+								.dest__place--info
+									.set__place Mt.Bromo
+									.dest__time estimated time: 
+										span.title--greenish 5 Hours
+									
+								.dest__place--more 
+									img.set__img(src="../img/mount.png", alt="")
+									a.dest--more(href="#") view details 
+						.dest__info 
+							.dest__place--item 	
+								.dest__place--info
+									.set__place Mt.Semeru
+									.dest__time estimated time: 
+										span.title--greenish 5 Hours
+									
+								.dest__place--more 
+									img.set__img(src="../img/mount.png", alt="")
+									a.dest--more(href="#") view details 
+
+						.dest__info 
+							.dest__place--item 	
+								.dest__place--info
+									.set__place Mt.Panderman
+									.dest__time estimated time: 
+										span.title--greenish 5 Hours
+									
+								.dest__place--more 
+									img.set__img(src="../img/mount.png", alt="")
+									a.dest--more(href="#") view details 
+				.set__buttons
+					button.set__btn 
+
+						svg(version='1.2' baseProfile='tiny-ps' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 20' width='18' height='20')
+							g#Set
+								g#ittinery
+									path#Book.s0(d='m17.42 1.58v1.2v9.67v2.37v2.41v0.6v0.6c0 0.66-0.54 1.2-1.2 1.2h-10.83h-2.41c-1.33 0-2.41-1.08-2.41-2.41v-14.44c0-1.33 1.08-2.41 2.41-2.41h2.41h9.63h1.2c0.66 0 1.2 0.54 1.2 1.2zm-2.41 15.04c0 0.33-0.27 0.6-0.6 0.6h-9.03h-1.22c-0.66 0-1.19-0.53-1.19-1.19v-0.02c0-0.66 0.53-1.19 1.19-1.19h1.22h9.03c0.33 0 0.6 0.27 0.6 0.6v1.2zm0-4.78c0 0.33-0.27 0.6-0.6 0.6h-8.42c-0.33 0-0.6-0.27-0.6-0.6v-8.46c0-0.33 0.27-0.6 0.6-0.6h8.42c0.33 0 0.6 0.27 0.6 0.6v8.46zm-2.41-6.06v1.2c0 0.33-0.27 0.6-0.6 0.6h-3.61c-0.33 0-0.6-0.27-0.6-0.6v-1.2c0-0.33 0.27-0.6 0.6-0.6h3.61c0.33 0 0.6 0.27 0.6 0.6z')
+
+
+						a.set__btn--link save as pdf
+					button.set__btn.set__btn--blue 
+						svg(version='1.2' baseProfile='tiny-ps' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22' width='24' height='22')
+							g#Set
+								g#ittinery
+									path#Printer.s0(d='m15.87 4.55h-7.74c-0.71 0-1.29-0.58-1.29-1.29v-1.29c0-0.71 0.58-1.29 1.29-1.29h7.74c0.71 0 1.29 0.58 1.29 1.29v1.29c0 0.71-0.58 1.29-1.29 1.29zm1.29 10.32h2.58v5.16c0 0.71-0.58 1.29-1.29 1.29h-12.9c-0.71 0-1.29-0.58-1.29-1.29v-5.16h2.58v3.87h10.32v-3.87zm5.16-11.61c0.71 0 1.29 0.58 1.29 1.29v1.29v1.29v7.74c0 0.71-0.58 1.29-1.29 1.29h-5.16v-2.58h-10.32v2.58h-5.16c-0.71 0-1.29-0.58-1.29-1.29v-10.32c0-0.71 0.58-1.29 1.29-1.29h18.06h1.29h1.29zm-1.29 3.87v5.8c0 0.36-0.29 0.64-0.64 0.64h-0.64v-1.29c0-0.71-0.58-1.29-1.29-1.29h-1.29h-10.32h-1.29c-0.71 0-1.29 0.58-1.29 1.29v1.29h-0.64c-0.36 0-0.64-0.29-0.64-0.64v-6.45c0-0.36 0.29-0.64 0.64-0.64h16.12h0.64c0.36 0 0.64 0.29 0.64 0.64v0.64z')
+						a.set__btn--link print

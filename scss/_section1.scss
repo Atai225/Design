@@ -1,5 +1,6 @@
 .main{
-	background-color: #f2fefe; 
+	background-color: #f2fefe;
+	padding: 0 0 5rem 0;
 }
 .block--white{
 	background-color: white
@@ -45,5 +46,11 @@
 		&__img{
 			margin: 0;
 		}
+	}
+}
+
+@include phone{
+	.container{
+		padding: 0 4px;
 	}
 }
