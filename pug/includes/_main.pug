@@ -25,10 +25,11 @@ main.main
 							svg.search-icon(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
 								path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z')
 						input.search__input.form-control.me-2(type='search' placeholder='search destination' aria-label='Search')
-						
-					.recomend All place  / 
-						span.title--gray Recomended place
-		
+					.dest__option
+						a.option__item.option__active(href="#") All place
+						span.slash
+						a.option__item(href="#") Recomended place
+
 
 
 
@@ -60,7 +61,7 @@ main.main
 
 		.container.set__container
 			section.set
-				.set__info 
+				.set__info#Ittinery
 					h2.section__title.text--center Set 
 						span.title--greenish Ittinery
 					p.section__text.text--center Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation. Have a great trip !
@@ -68,7 +69,7 @@ main.main
 				.set__blocks 
 					.set__plan
 						.set__plan--top
-							h5.set__title Your ittinery title here
+							h5.set__title Travel Schedule
 						.set__plan--mid 
 							.set__date--info
 								.set__day Day 1
@@ -112,9 +113,9 @@ main.main
 								option(value="Mountain") Mountain
 								option(value="Lake") Lake
 								option(value="Forest") Forest
-							
-							svg.search-icon(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
-								path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z') 
+							button.search__btn--2
+								svg.search-icon(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+									path(d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z') 
 						.dest__info 
 							.dest__place--item 	
 								.dest__place--info
@@ -168,18 +169,17 @@ main.main
 									img.set__img(src="../img/mount.png", alt="")
 									a.dest--more(href="#") view details 
 				.set__buttons
-					button.set__btn 
+					a.set__btn
 
 						svg(version='1.2' baseProfile='tiny-ps' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 20' width='18' height='20')
 							g#Set
 								g#ittinery
 									path#Book.s0(d='m17.42 1.58v1.2v9.67v2.37v2.41v0.6v0.6c0 0.66-0.54 1.2-1.2 1.2h-10.83h-2.41c-1.33 0-2.41-1.08-2.41-2.41v-14.44c0-1.33 1.08-2.41 2.41-2.41h2.41h9.63h1.2c0.66 0 1.2 0.54 1.2 1.2zm-2.41 15.04c0 0.33-0.27 0.6-0.6 0.6h-9.03h-1.22c-0.66 0-1.19-0.53-1.19-1.19v-0.02c0-0.66 0.53-1.19 1.19-1.19h1.22h9.03c0.33 0 0.6 0.27 0.6 0.6v1.2zm0-4.78c0 0.33-0.27 0.6-0.6 0.6h-8.42c-0.33 0-0.6-0.27-0.6-0.6v-8.46c0-0.33 0.27-0.6 0.6-0.6h8.42c0.33 0 0.6 0.27 0.6 0.6v8.46zm-2.41-6.06v1.2c0 0.33-0.27 0.6-0.6 0.6h-3.61c-0.33 0-0.6-0.27-0.6-0.6v-1.2c0-0.33 0.27-0.6 0.6-0.6h3.61c0.33 0 0.6 0.27 0.6 0.6z')
+						| save as pdf
 
-
-						a.set__btn--link save as pdf
-					button.set__btn.set__btn--blue 
+					a.set__btn.set__btn--blue 
 						svg(version='1.2' baseProfile='tiny-ps' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22' width='24' height='22')
 							g#Set
 								g#ittinery
 									path#Printer.s0(d='m15.87 4.55h-7.74c-0.71 0-1.29-0.58-1.29-1.29v-1.29c0-0.71 0.58-1.29 1.29-1.29h7.74c0.71 0 1.29 0.58 1.29 1.29v1.29c0 0.71-0.58 1.29-1.29 1.29zm1.29 10.32h2.58v5.16c0 0.71-0.58 1.29-1.29 1.29h-12.9c-0.71 0-1.29-0.58-1.29-1.29v-5.16h2.58v3.87h10.32v-3.87zm5.16-11.61c0.71 0 1.29 0.58 1.29 1.29v1.29v1.29v7.74c0 0.71-0.58 1.29-1.29 1.29h-5.16v-2.58h-10.32v2.58h-5.16c-0.71 0-1.29-0.58-1.29-1.29v-10.32c0-0.71 0.58-1.29 1.29-1.29h18.06h1.29h1.29zm-1.29 3.87v5.8c0 0.36-0.29 0.64-0.64 0.64h-0.64v-1.29c0-0.71-0.58-1.29-1.29-1.29h-1.29h-10.32h-1.29c-0.71 0-1.29 0.58-1.29 1.29v1.29h-0.64c-0.36 0-0.64-0.29-0.64-0.64v-6.45c0-0.36 0.29-0.64 0.64-0.64h16.12h0.64c0.36 0 0.64 0.29 0.64 0.64v0.64z')
-						a.set__btn--link print
+						| print

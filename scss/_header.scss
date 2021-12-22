@@ -13,7 +13,7 @@
 		line-height: 2.1875rem;
 	}
 	&__btn{
-		@include btn(#ffffa6,1.5625rem 2.1875rem,37px,none);
+		@include btn(#ffffa6,25px 35px,37px,none);
 		display: inline-block;
 		margin-top: 1rem;
 	}
@@ -25,6 +25,24 @@
 	padding: 0;
 	@include text(16px,#10273d,bolder,none,$fontlato,uppercase);
 }
+.intro__btn:hover .btn__link{
+	color: #ffff9b;
+}
+.intro__btn:hover{
+	background-color: transparent;
+	border: 3px solid #ffffa6;
+	padding: 22px 32px;
+	transition: .3s ease;
+}
+.intro__btn:active{
+	padding: 22px 33px;
+	background-color: #fafa499d;
+	transition: .3s ease;
+}
+.intro__btn:active .btn__link{
+	font-size: 15px;
+}
+
 @include tablet{
 	.intro{
 		max-width: 31.25rem;

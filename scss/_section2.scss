@@ -17,6 +17,12 @@
 }
 .more-info:hover{
 	color: rgb(78, 78, 78);
+	transition: .3s ease;
+}
+.more-info:active{
+	font-size: 15px;
+	color: black;
+	transition: .3s ease;
 }
 ::placeholder{
 	font-style: italic;
@@ -36,12 +42,21 @@
 }
 .dest__info--bottom{
 	display: flex;
-	justify-content: space-between;
 	margin-top: 4rem;
 }
-.recomend{
-	@include text(16px,black,900,none,$fontlato,$transform: uppercase);
+.dest__option{
+	margin-left: auto;
+}
+.option__item{
+	@include text(16px,#aeaeae,900,none,$fontlato,$transform: uppercase);
+	margin-left: auto;
 	cursor: pointer;
+}
+.slash::after{
+	content: " / ";
+}
+.option__active{
+	color: #000000;
 }
 .title--gray{
 	color: #777;
@@ -52,7 +67,7 @@
 		flex-direction: column;
 		justify-content: start;
 	}
-	.recomend{
+	.dest__option{
 		margin-top: 1rem;
 	}
 	.dest__info--top{
@@ -80,6 +95,10 @@
 }
 .see-more__link::after{
 	content: '→';
+}
+.see-more__link:active{
+	font-size: 15px;
+	color: #c9c9c9;
 }
 .recom-1{
 	margin-top: 20px;
